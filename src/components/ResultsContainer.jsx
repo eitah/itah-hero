@@ -1,5 +1,5 @@
 import React from 'react';
-import searchForSpots from "./services/search";
+import searchForSpots from "../services/search";
 import Header from './Header';
 import ListingsContainer from './ListingsContainer';
 

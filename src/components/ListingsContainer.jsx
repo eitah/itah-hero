@@ -22,8 +22,8 @@ export default class ListingsContainer extends React.PureComponent {
         const modalDetails = search[selectionIndex];
         return (
             <div>
+                <Modal isOpen={openModal} details={modalDetails} toggleModal={this.toggleModal}/>
                 {search.map((spot, index) => this.buildListing(spot, index))}
-                <Modal isOpen={openModal} details={modalDetails}/>
             </div>
         );
     }
