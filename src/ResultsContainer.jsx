@@ -1,6 +1,7 @@
 import React from 'react';
 import searchForSpots from "./services/search";
 import Header from './Header';
+import ListingsContainer from './ListingsContainer';
 
 export default class ResultsContainer extends React.PureComponent {
     state = {};
@@ -16,8 +17,8 @@ export default class ResultsContainer extends React.PureComponent {
             return null;
         }
         return (<div>
-            <Header search={search} location="Millenium Park"/>
-            I am the greatest {search[0].title}
+            <Header search={search} location="Millennium Park"/>
+            <ListingsContainer search={search} />
         </div>)
     }
 };
