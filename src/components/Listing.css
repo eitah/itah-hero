@@ -1,27 +1,41 @@
 .Listing {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 25%;
-    justify-items: start;
-
+    grid-template-columns: 20px 1fr 2fr 20px;
+    grid-template-rows: 20px repeat(3, 1fr) 20px;
+    grid-column-gap: 10px;
+    justify-items: left;
+    align-items: center;
     border: lightgray;
     border-style: solid;
     border-width: 2px 0px 0px;
 }
 
 .listing-image {
-    grid-column: 1 / 1;
-    grid-row: 1 / 4;
+    grid-column: 2;
+    grid-row: 2 / 5;
     justify-self: center;
+    min-height: 150px;
 }
 
 .listing-title {
+    font-size: x-large;
+    grid-column: 3;
+    grid-row: 2;
     font-weight: bold;
+    text-align: left;
 }
 .listing-distance {
+    grid-column: 3;
+    grid-row:3;
     color: gray;
 }
 
 .listing-details {
+    grid-column: 3;
     color: blue;
+    grid-row: 4;
+}
+
+.listing-details:hover {
+    cursor: pointer;
 }
