@@ -1,13 +1,13 @@
 import React from 'react';
-
+import './Listing.css';
 
 export default function Listing({spot, index, toggleModal}) {
     return (
-        <div key={spot.title}>
-            <img src={spot.image_url}/>
-            <div>{spot.title}</div>
-            <div>{spot.distance}</div>
-            <div data-index={index} onClick={toggleModal}>Details</div>
+        <div className="Listing" key={spot.title}>
+            <img className="listing-image" src={spot.image_url}/>
+            <div className="listing-title">{spot.title}</div>
+            <div className="listing-distance">{spot.distance}</div>
+            <div data-index={index} className="listing-details" onClick={toggleModal}>Details</div>
         </div>
     )
 }

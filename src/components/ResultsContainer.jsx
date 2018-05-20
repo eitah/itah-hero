@@ -16,9 +16,11 @@ export default class ResultsContainer extends React.PureComponent {
         if (!search) {
             return null;
         }
-        return (<div>
-            <Header search={search} location="Millennium Park"/>
-            <ListingsContainer search={search} />
-        </div>)
+        return (
+            <div>
+                <Header search={search} location="Millennium Park"/>
+                <ListingsContainer search={search}/>
+            </div>
+        )
     }
 };

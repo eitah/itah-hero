@@ -1,7 +1,7 @@
 import React from 'react';
 import Listing from './Listing';
 import Modal from './Modal';
-
+import './ListingsContainer.css';
 
 
 export default class ListingsContainer extends React.PureComponent {
@@ -21,7 +21,7 @@ export default class ListingsContainer extends React.PureComponent {
         const {openModal, selectionIndex } = this.state;
         const modalDetails = search[selectionIndex];
         return (
-            <div>
+            <div className="ListingsContainer">
                 <Modal isOpen={openModal} details={modalDetails} toggleModal={this.toggleModal}/>
                 {search.map((spot, index) => this.buildListing(spot, index))}
             </div>

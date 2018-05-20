@@ -1,11 +1,12 @@
 import React from 'react';
+import './Header.css';
 
 export default function Header({search = {}, location}) {
     const availableSpots = search.length || 0;
     return (
-        <div>
+        <div className="Header">
             <div>
-                Chicago > {location}
+                <span className="Header-breadcrumb">Chicago</span> > {location}
             </div>
             <h2>
                 {location}

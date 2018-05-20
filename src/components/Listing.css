@@ -1,0 +1,27 @@
+.Listing {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 25%;
+    justify-items: start;
+
+    border: lightgray;
+    border-style: solid;
+    border-width: 2px 0px 0px;
+}
+
+.listing-image {
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+    justify-self: center;
+}
+
+.listing-title {
+    font-weight: bold;
+}
+.listing-distance {
+    color: gray;
+}
+
+.listing-details {
+    color: blue;
+}
